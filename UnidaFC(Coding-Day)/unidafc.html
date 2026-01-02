@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unida Food Court</title>
+    <link rel="stylesheet" href="styleufc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <header>
+
+        <div class="floating-icons">
+    <span class="icon i1">🍗</span>
+    <span class="icon i2">🥗</span>
+    <span class="icon i3">☕</span>
+    <span class="icon i4">🌶️</span>
+        </div>
+    
+    <div class="header-content">
+        <h1>Waroeng UNIDA</h1>
+       <p> <span class="slogan">Menu masakan rumahan dengan rasa istimewa.</span></p>
+        <form class="search-box" onsubmit="return false;">
+        <input type="text" name="query" placeholder="Cari ayam geprek, pecel, atau teh..." required>
+        <button type="submit">Cari Menu</button>
+    </form>
+    </div>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+         <a href="#" class="dropbtn">Menu ▾</a>
+          <div class="dropdown-content">          
+             <div class="nested-dropdown">
+              <a href="#" class="nested-btn">Ayam Geprek ▸</a>
+               <div class="nested-content">
+                    <a href="#Dada">Dada</a>
+                    <a href="#Paha-Atas">Paha Atas</a>
+                    <a href="#Paha-Bawah">Paha Bawah</a>
+                    <a href="#Sayap">Sayap</a>
+               </div>
+                <a href="#Nasi-Pecel">Nasi Pecel</a>
+                <a href="#Es-Teh">Teh Manis</a>
+             </div>
+          </div>        
+        </div>
+          <a href="#cara-pesan">Cara Pesan</a>
+          <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main class="container" id="menu">
+        <h2 class="section-title">Daftar Menu Populer:</h2>
+           <div class="menu-wrapper">
+
+        <div class="menu-item" id="Dada">
+              <div class="menu-slider-container">
+                <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
+                    <img src="Resources/dageprek.jpg"alt="Ayam Geprek (Dada)"><img src="Resources/dada.jpg"alt="Ayam Geprek (Dada)">
+                    <img src="Resources/dageprek.jpg"alt="Ayam Geprek (Dada)"><img src="Resources/dada.jpg"alt="Ayam Geprek (Dada)">
+                </div>
+              </div>
+           
+              <div class="menu-text">
+                <h3>Nasi Ayam Geprek (Dada)</h3>
+                <p>Daging dada tebal, juicy, digeprek pedas gila-gilaan sekali gigit langsung meledak rasa gurih pedas yang bikin nagih!</p>
+            </div>
+            <div class="menu-action">
+                <span class="harga">Rp 18.000</span>
+                <button onclick="tambahKeKeranjang('Nasi Ayam Geprek Bagian Dada', 18000)">Pesan</button>
+            </div>
+        </div>
+
+         <div class="menu-item" id="Paha-Atas">
+            <div class="menu-slider-container">
+                <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
+                    <img src="Resources/pageprek.jpg"alt="Ayam Geprek (Paha Atas)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Atas)">
+                    <img src="Resources/pageprek.jpg"alt="Ayam Geprek (Paha Atas)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Atas)">
+                </div>
+              </div>
+
+            <div class="menu-text">
+                <h3>Nasi Ayam Geprek (Paha Atas)</h3>
+                <p>Paha empuk berbalut sambal pedas nendang, gurihnya meresap sampai ke tulang makan sekali, pasti pengen lagi!</p>
+            </div>
+            <div class="menu-action">
+                <span class="harga">Rp 18.000</span>
+                <button onclick="tambahKeKeranjang('Nasi Ayam Geprek Bagian Paha Atas', 18000)">Pesan</button>
+            </div>
+        </div>
+
+         <div class="menu-item" id="Paha-Bawah">
+            <div class="menu-slider-container">
+                <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
+                    <img src="Resources/pageprek.jpg" alt="Ayam Geprek (Paha Bawah)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Bawah)">
+                    <img src="Resources/pageprek.jpg"alt="Ayam Geprek (Paha Bawah)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Bawah)">
+                </div>
+              </div>
+
+            <div class="menu-text">
+                <h3>Nasi Ayam Geprek (Paha Bawah)</h3>
+                <p>Paha empuk berbalut sambal pedas nendang, gurihnya meresap sampai ke tulang makan sekali, pasti pengen lagi!</p>
+            </div>
+            <div class="menu-action">
+                <span class="harga">Rp 15.000</span>
+                <button onclick="tambahKeKeranjang('Nasi Ayam Geprek Bagian Paha Bawah', 15000)">Pesan</button>
+            </div>
+        </div>
+
+         <div class="menu-item" id="Sayap">
+              <div class="menu-slider-container">
+                <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
+                    <img src="Resources/sageprek.jpg"alt="Ayam Geprek (Sayap)"><img src="Resources/sayap.jpg"alt="Ayam Geprek (Sayap)">
+                    <img src="Resources/sageprek.jpg"alt="Ayam Geprek (Sayap)"><img src="Resources/sayap.jpg"alt="Ayam Geprek (Sayap)">
+                </div>
+              </div>
+
+            <div class="menu-text">
+                <h3> Nasi Ayam Geprek (Sayap)</h3>
+                <p>Sayap renyah dengan sambal pedas menggigit, kecil tapi bikin ketagihan cocok buat cemilan pedas yang bikin keringetan puas!</p>
+            </div>
+            <div class="menu-action">
+                <span class="harga">Rp 14.000</span>
+                <button onclick="tambahKeKeranjang('Nasi Ayam Geprek Sayap', 14000)">Pesan</button>
+            </div>
+        </div>
+
+                <div class="menu-item" id="Nasi-Pecel">
+            <img src="Resources/pecel.jpg" alt="Pecel"class="menu-slider-container">
+            <div class="menu-text">
+                <h3>Nasi Pecel Spesial</h3>
+                <p>Nasi pecel dengan bumbu rahasia, sayur, dan tempe yang crunchy.</p>
+            </div>
+            <div class="menu-action">
+                <span class="harga">Rp 8.000</span>
+                <button onclick="tambahKeKeranjang('Nasi Pecel Spesial', 8000)">Pesan</button>
+            </div>
+        </div>
+         <div class="menu-item" id="Es-Teh">
+             <img src="Resources/teh.jpg" alt="Es Teh"class="menu-slider-container">
+            <div class="menu-text">
+                <h3>Es Teh Manis</h3>
+                <p>Pelepas dahaga paling ampuh.</p>
+            </div>
+            <div class="menu-action">
+                <span class="harga">Rp 3.000</span>
+               <button onclick="tambahKeKeranjang('Es teh manis', 3000)">Pesan</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <section class="cara-pesan" id="cara-pesan">
+        <div class="wa-box">
+            <h2>Cara Pesan</h2>
+            <p>Silakan hubungi kami via WhatsApp untuk melakukan pemesanan.</p>
+            <a href="https://wa.me/+6282174275051" target="_blank" class="whatsapp-btn">Pesan via WhatsApp</a>
+        </div>
+    </section>
+<div id="keranjang" style="display: none;">
+    <div class="ker-konten">
+        <div class="zona-kiri">
+            <button onclick="resetKeranjang()" class="btn-reset">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+
+        <div class="zona-tengah">
+            <i class="fas fa-shopping-cart icon-keranjang"></i> 
+            <span id="ker-jumlah">0</span> Item | <span id="ker-total">Rp 0</span>
+            <button onclick="kurangiSatuItem()" class="btn-minus">
+                <i class="fas fa-minus-circle"></i>
+            </button>
+        </div>
+
+        <div class="zona-kanan">
+            <button onclick="checkoutWA()" class="co-btn">Order WA</button>
+        </div>
+    </div>
+</div>
+  <footer id="kontak">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2 class="logo">Unida Food Court</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/+6282174275051"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Layanan</h3>
+            <ul>
+                <li><a href="https://wa.me/+6282174275051">Pesan Antar</a></li>
+                <li><a href="#">Menu Populer</a></li>
+                <li><a href="https://wa.me/+6282174275051">Catering</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h3>Bantuan</h3>
+            <ul>
+                <li><a href="#cara-pesan">Cara Pesan</a></li>
+                <li><a href="https://maps.app.goo.gl/HLKoRuBwMWz9Py8UA">Lokasi</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h3>Kontak Kami</h3>
+            <p>0821-7427-5051</p>
+            <p>unida@foodcourt.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Unida Food Court. All rights reserved.</p>
+    </div>
+</footer>
+<script src="scriptufc.js"></script>
+</body>
+</html>
