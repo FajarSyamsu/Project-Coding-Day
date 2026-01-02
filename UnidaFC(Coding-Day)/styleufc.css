@@ -567,30 +567,42 @@ footer {
     }
   nav {
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 10px;
-    justify-content: flex-start;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px 5px;
+    justify-content: center;
+    position: sticky;
   }
   nav a {
-    margin: 0 5px;
-    padding: 8px 15px;
-    font-size: 0.9rem;
-    display: inline-block;
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    flex: 0 1 auto;
+    text-align: center;
   }
-  .dropdown-content, .nested-content {
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .dropdown-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    width: max-content;
+    min-width: 160px;
+    box-shadow: 0 8 16rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ffd700;
+  }
+  .nested-content {
     position: static;
     width: 100%;
-    box-shadow: none;
     background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-  }
-  .dropdown-content a {
-    padding-left: 30px;
-  }
-  .nested-content a {
-    padding-left: 50px;
+    transform: none;
   }
 .menu-wrapper {
         display: flex;            
