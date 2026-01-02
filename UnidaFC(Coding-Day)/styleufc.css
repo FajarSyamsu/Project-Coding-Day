@@ -30,7 +30,6 @@ header {
   overflow: hidden;  
   background-color: #ff4400;
   color: #ffd700;
-  font-size: 64px;
   font-family: 'Luckies Guy', cursive;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -536,8 +535,36 @@ footer {
   display: block !important;
 }
 @media (max-width: 768px) {
-    .header-content h1 { font-size: 3rem; }
-    .header-content p { font-size: 1rem; }
+  header {
+    padding: 40px 15px;
+    font-size: 32px;
+  }
+    .header-content h1 { 
+      font-size: 2.5rem !important;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .header-content p { 
+    font-size: 0.9rem !important; 
+    letter-spacing: 1px;
+    }
+    .slogan {
+      font-size: 20px !important;
+      margin-top: 5px;
+    }
+    .search-box {
+      width: 100%;
+      margin-top: 15px;
+      flex-direction: row;
+    }
+    .search-box input {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+    .search-box button {
+      padding: 8px 15px;
+      font-size: 0.8rem;
+    }
 .menu-wrapper {
         display: flex;            
         overflow-x: auto;         
