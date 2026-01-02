@@ -565,6 +565,33 @@ footer {
       padding: 8px 15px;
       font-size: 0.8rem;
     }
+  nav {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+  }
+  nav a {
+    margin: 0 5px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    display: inline-block;
+  }
+  .dropdown-content, .nested-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+  .dropdown-content a {
+    padding-left: 30px;
+  }
+  .nested-content a {
+    padding-left: 50px;
+  }
 .menu-wrapper {
         display: flex;            
         overflow-x: auto;         
