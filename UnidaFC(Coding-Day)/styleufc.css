@@ -60,8 +60,8 @@ header {
 .icon {
     position: absolute;
     font-size: 30px;
-    opacity: 0.15; /* Tipis-tipis saja */
-    filter: grayscale(100%) brightness(200%); /* Biar warnanya nyatu sama BG */
+    opacity: 0.15;
+    filter: grayscale(100%) brightness(200%);
     animation: float 10s infinite ease-in-out;
 }
 .i1 { top: 10%; left: 10%; animation-delay: 0s; }
@@ -96,7 +96,7 @@ header {
 .scroll-down {
     position: absolute;
     left: calc(50% + 270px); 
-    bottom: 12px; 
+    bottom: 5px; 
     font-size: 30px;
     color: #ffd700;
     cursor: pointer;
