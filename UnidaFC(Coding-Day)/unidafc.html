@@ -27,6 +27,8 @@
         <button type="submit">Cari Menu</button>
     </form>
     </div>
+
+    <div class="scroll-down">↓</div>
     </header>
 
     <nav>
@@ -52,13 +54,18 @@
 
     <main class="container" id="menu">
         <h2 class="section-title">Daftar Menu Populer:</h2>
+        <div id="not-found" style="display: none; text-align: center; padding: 40px; color: #ffd700;">
+          <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 15px; opacity: 0.5;"></i>
+          <h3>Waduh, Menu Tidak Ditemukan...</h3>
+          <p style="color: white; text-shadow: 1px 1px 2px black;">Coba cari kata kunci lain seperti "Geprek" atau "Pecel".</p>
+        </div>
            <div class="menu-wrapper">
 
         <div class="menu-item" id="Dada">
               <div class="menu-slider-container">
                 <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
-                    <img src="Resources/dageprek.jpg"alt="Ayam Geprek (Dada)"><img src="Resources/dada.jpg"alt="Ayam Geprek (Dada)">
-                    <img src="Resources/dageprek.jpg"alt="Ayam Geprek (Dada)"><img src="Resources/dada.jpg"alt="Ayam Geprek (Dada)">
+                    <img src="Resources/dageprek.webp"alt="Ayam Geprek (Dada)" loading="lazy"><img src="Resources/dada.webp"alt="Ayam Geprek (Dada)" loading="lazy">
+                    <img src="Resources/dageprek.webp"alt="Ayam Geprek (Dada)" loading="lazy"><img src="Resources/dada.webp"alt="Ayam Geprek (Dada)" loading="lazy">
                 </div>
               </div>
            
@@ -75,8 +82,8 @@
          <div class="menu-item" id="Paha-Atas">
             <div class="menu-slider-container">
                 <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
-                    <img src="Resources/pageprek.jpg"alt="Ayam Geprek (Paha Atas)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Atas)">
-                    <img src="Resources/pageprek.jpg"alt="Ayam Geprek (Paha Atas)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Atas)">
+                    <img src="Resources/pageprek.webp"alt="Ayam Geprek (Paha Atas)" loading="lazy"><img src="Resources/paha.webp"alt="Ayam Geprek (Paha Atas)" loading="lazy">
+                    <img src="Resources/pageprek.webp"alt="Ayam Geprek (Paha Atas)" loading="lazy"><img src="Resources/paha.webp"alt="Ayam Geprek (Paha Atas)" loading="lazy">
                 </div>
               </div>
 
@@ -93,8 +100,8 @@
          <div class="menu-item" id="Paha-Bawah">
             <div class="menu-slider-container">
                 <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
-                    <img src="Resources/pageprek.jpg" alt="Ayam Geprek (Paha Bawah)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Bawah)">
-                    <img src="Resources/pageprek.jpg"alt="Ayam Geprek (Paha Bawah)"><img src="Resources/paha.jpg"alt="Ayam Geprek (Paha Bawah)">
+                    <img src="Resources/pageprek.webp" alt="Ayam Geprek (Paha Bawah)" loading="lazy"><img src="Resources/paha.webp"alt="Ayam Geprek (Paha Bawah)" loading="lazy">
+                    <img src="Resources/pageprek.webp"alt="Ayam Geprek (Paha Bawah)" loading="lazy"><img src="Resources/paha.webp"alt="Ayam Geprek (Paha Bawah)" loading="lazy">
                 </div>
               </div>
 
@@ -111,8 +118,8 @@
          <div class="menu-item" id="Sayap">
               <div class="menu-slider-container">
                 <div class="menu-slider-track" style="--n: 2; --lebar: 80px;">
-                    <img src="Resources/sageprek.jpg"alt="Ayam Geprek (Sayap)"><img src="Resources/sayap.jpg"alt="Ayam Geprek (Sayap)">
-                    <img src="Resources/sageprek.jpg"alt="Ayam Geprek (Sayap)"><img src="Resources/sayap.jpg"alt="Ayam Geprek (Sayap)">
+                    <img src="Resources/sageprek.webp"alt="Ayam Geprek (Sayap)" loading="lazy"><img src="Resources/sayap.webp"alt="Ayam Geprek (Sayap)" loading="lazy">
+                    <img src="Resources/sageprek.webp"alt="Ayam Geprek (Sayap)" loading="lazy"><img src="Resources/sayap.webp"alt="Ayam Geprek (Sayap)" loading="lazy">
                 </div>
               </div>
 
@@ -127,7 +134,7 @@
         </div>
 
                 <div class="menu-item" id="Nasi-Pecel">
-            <img src="Resources/pecel.jpg" alt="Pecel"class="menu-slider-container">
+            <img src="Resources/pecel.webp" alt="Pecel"class="menu-slider-container" loading="lazy">
             <div class="menu-text">
                 <h3>Nasi Pecel Spesial</h3>
                 <p>Nasi pecel dengan bumbu rahasia, sayur, dan tempe yang crunchy.</p>
@@ -138,7 +145,7 @@
             </div>
         </div>
          <div class="menu-item" id="Es-Teh">
-             <img src="Resources/teh.jpg" alt="Es Teh"class="menu-slider-container">
+             <img src="Resources/teh.webp" alt="Es Teh"class="menu-slider-container" loading="lazy">
             <div class="menu-text">
                 <h3>Es Teh Manis</h3>
                 <p>Pelepas dahaga paling ampuh.</p>
@@ -184,7 +191,7 @@
         <div class="footer-brand">
             <h2 class="logo">Unida Food Court</h2>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <li><a href="https://www.instagram.com/unida.gontor" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="https://wa.me/+6282174275051"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-x-twitter"></i></a>
@@ -198,7 +205,7 @@
             <ul>
                 <li><a href="https://wa.me/+6282174275051">Pesan Antar</a></li>
                 <li><a href="#">Menu Populer</a></li>
-                <li><a href="https://wa.me/+6282174275051">Catering</a></li>
+                <li><a href="https://wa.me/6282174275051?text=Halo, saya mau tanya tentang menu catering">Catering</a></li>
             </ul>
         </div>
 

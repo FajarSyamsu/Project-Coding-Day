@@ -10,13 +10,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchInput) {
         // Fungsi Filter Menu
         const filterMenu = () => {
-            const filter = searchInput.value.toLowerCase();
-            menuItems.forEach(item => {
-                const text = item.textContent.toLowerCase();
-                item.style.display = text.includes(filter) ? "" : "none";
-            });
-        };
+    const filter = searchInput.value.toLowerCase();
+    let adaYangCocok = false; 
 
+    menuItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(filter)) {
+            item.style.display = ""; 
+            adaYangCocok = true;
+        } else {
+            item.style.display = "none"; 
+        }
+    });
+    const notFoundEl = document.getElementById('not-found');
+    if (adaYangCocok) {
+        notFoundEl.style.display = "none";
+    } else {
+        notFoundEl.style.display = "block";
+    }
+};
         // Jalankan saat mengetik
         searchInput.addEventListener('input', filterMenu);
 
@@ -114,6 +126,9 @@ function updateTampilanKeranjang() {
 
     if (totalItem > 0) {
         container.style.display = 'block'; // INI YANG MEMUNCULKAN KERANJANG
+        container.classList.add('ker-update');
+        setTimeout(() => container.classList.remove('ker-update'), 400);
+
         countEl.innerText = totalItem;
         totalEl.innerText = 'Rp ' + totalHarga.toLocaleString('id-ID');
     } else {

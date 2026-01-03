@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('Resources/bgwacp.jpg');
+  background-image: url('Resources/bgwacp.webp');
   color: #f9f9f9;
   line-height: 1.6;
 }
@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 .container {
-  background-image: url("Resources/bgufc3.jpg");
+  background-image: url("Resources/bgufc3.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,6 +95,15 @@ header {
   font-size: 1.5rem; 
   margin-top: 10px;
   letter-spacing: 2px; 
+}
+.scroll-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #ffd700;
+  animation: float 2s infinite;
 }
 .search-box {
     display: flex;
@@ -294,14 +303,11 @@ nav a:hover {
 }
 .menu-text p {
   margin: 5px 0 0;
-  font: bold;
+  font-weight: 400;
+  line-height: 1.4;
   font-size: 0.9rem;
-  color: #ffffff;
-   text-shadow: 
-        -1px -1px 0 black,  
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black;
+  color: #eeeeee;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)
 }
 .menu-action {
   text-align: right;
@@ -333,7 +339,14 @@ button {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek membal */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek membal */;
+  position: relative;
+  overflow: hidden;
+}
+button:hover{
+  background-color: #ff2301;
+  box-shadow: 0 4px 15px rgba(255, 68, 0, 0.4);
+  transform: translateY(-2px)
 }
 .menu-item button:hover {
     transform: scale(1.1) translateY(-3px);
@@ -430,6 +443,7 @@ button:active {
     border-radius: 25px;
     cursor: pointer;
     animation: mantul 2s infinite; 
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .co-btn:hover {
@@ -456,6 +470,13 @@ button:active {
     60% {
         transform: translateY(-3px);
     }
+}
+@keyframes ker-mantul{
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.1);}
+}
+.ker-update {
+animation: ker-mantul 0.4s ease-in-out;
 }
 footer {
   background-color: #ff4400;
