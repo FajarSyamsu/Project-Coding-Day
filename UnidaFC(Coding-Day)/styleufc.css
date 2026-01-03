@@ -430,17 +430,46 @@ button:active {
     border-radius: 30px;
     white-space: nowrap;
 }
-
-.btn-reset, .btn-minus {
-    background: none;
+.btn-minus {
+    background: rgba(255, 255, 255, 0.2); /* Kasih sedikit bg biar kelihatan batasnya */
     border: none;
-    color: white;
+    color: white !important;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-reset:hover { color: white; background-color: #ff4400; }
-.btn-minus:hover { color: white; background-color: #ff4400;}
+.btn-minus:hover { 
+    background-color: #ff4400 !important; 
+    transform: scale(1.2);
+}
+.btn-reset {
+    background: #ff0000;
+    border: none;
+    color: white !important;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+}
+.btn-reset:hover { 
+    background-color: #c21a00 !important; 
+    transform: scale(1.1);
+}
+.btn-reset i, .btn-minus i {
+    color: white !important;
+    font-size: 16px;
+}
 .co-btn {
     background: white !important;
     color: #25D366 !important;
