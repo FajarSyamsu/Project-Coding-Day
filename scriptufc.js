@@ -194,7 +194,7 @@ function cekJamOperasional() {
     const menit = sekarang.getMinutes();
     
     const jamBuka = 6;
-    const jamTutup = 14;
+    const jamTutup = 24;
     const menitTutup = 30;
 
     const semuaTombol = document.querySelectorAll('.menu-item button');
@@ -224,3 +224,4 @@ function cekJamOperasional() {
 }
 
 window.onload = cekJamOperasional;
+
