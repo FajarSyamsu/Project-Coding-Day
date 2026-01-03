@@ -439,8 +439,8 @@ button:active {
     transition: 0.3s;
 }
 
-.btn-reset:hover { color: #ff4400; }
-.btn-minus:hover { color: #ff4400; }
+.btn-reset:hover { color: white; background-color: #ff4400; }
+.btn-minus:hover { color: white; background-color: #ff4400;}
 .co-btn {
     background: white !important;
     color: #25D366 !important;
