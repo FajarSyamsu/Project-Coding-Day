@@ -188,3 +188,39 @@ function checkoutWA() {
     const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(daftarPesanan)}`;
     window.open(url, '_blank');
 }
+function cekJamOperasional() {
+    const sekarang = new Date();
+    const jam = sekarang.getHours();
+    const menit = sekarang.getMinutes();
+    
+    const jamBuka = 6;
+    const jamTutup = 14;
+    const menitTutup = 30;
+
+    const semuaTombol = document.querySelectorAll('.menu-item button');
+    
+    let sedangBuka = false;
+
+    // Logika pengecekan
+    if (jam > jamBuka && jam < jamTutup) {
+        sedangBuka = true;
+    } else if (jam === jamBuka) {
+        sedangBuka = true;
+    } else if (jam === jamTutup && menit < menitTutup) {
+        sedangBuka = true;
+    }
+
+    if (!sedangBuka) {
+        semuaTombol.forEach(btn => {
+            btn.innerText = "Tutup";
+            btn.style.backgroundColor = "#7a7a7a"; // Warna abu-abu
+            btn.style.cursor = "not-allowed";
+            btn.disabled = true; 
+        });
+        console.log("Status: Warung Tutup (Buka kembali jam 06:00)");
+    } else {
+        console.log("Status: Warung Buka, Selamat Belanja!");
+    }
+}
+
+window.onload = cekJamOperasional;

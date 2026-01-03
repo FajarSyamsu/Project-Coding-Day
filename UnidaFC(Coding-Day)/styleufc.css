@@ -10,18 +10,15 @@ html {
   scroll-behavior: smooth;
 }
 .container {
-  background-image: url("Resources/bgufc3.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Resources/bgufc3.webp");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-
   border-radius: 20px;
-
   position: relative;
-
   border: 0px solid rgba(0, 0, 0, 0.705);
-
- box-shadow: 
+  box-shadow: 
   inset 5px 5px 15px rgb(0, 0, 0),
   inset -5px -5px 15px rgb(255, 255, 255);
 }
@@ -719,7 +716,9 @@ footer {
     }
     .zona-tengah {
         font-size: 0.8rem;
-        padding: 5px 8px;
+        padding: 5px 12px;
+        gap: 10px;
+        margin-left: 5px;
     }
     .co-btn {
         padding: 8px 12px !important;
