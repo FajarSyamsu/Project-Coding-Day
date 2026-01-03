@@ -94,17 +94,15 @@ header {
   letter-spacing: 2px; 
 }
 .scroll-down {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  font-size: 35px;
-  color: #ffd700;
-  animation: bounce 2s infinite;
-  cursor: pointer; 
-  display: block;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: calc(50% + 270px); 
+    bottom: 12px; 
+    font-size: 30px;
+    color: #ffd700;
+    cursor: pointer;
+    z-index: 5;
+    animation: bounce 2s infinite;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
@@ -614,6 +612,12 @@ footer {
     padding: 40px 15px;
     font-size: 32px;
   }
+  .scroll-down {
+        position: relative;
+        left: 0;
+        margin-top: 15px;
+        display: block;
+    }
     .header-content h1 { 
       font-size: 2.5rem !important;
       line-height: 1.2;
@@ -679,7 +683,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.05);
     transform: none;
   }
-.menu-wrapper {
+    .menu-wrapper {
         display: flex;            
         overflow-x: auto;         
         gap: 15px;                
