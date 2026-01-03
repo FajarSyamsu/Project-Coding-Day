@@ -95,8 +95,9 @@ header {
 }
 .scroll-down {
   position: relative;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  left: 50%;
   transform: translateX(-50%);
   font-size: 35px;
   color: #ffd700;
